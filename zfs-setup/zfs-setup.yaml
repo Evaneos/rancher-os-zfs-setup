@@ -1,0 +1,15 @@
+zfs-setup:
+  image: fhuitelec/zfs-utils
+  privileged: true
+  labels:
+    io.rancher.os.scope: "system"
+    io.rancher.os.detach: "true"
+    io.rancher.os.before: "docker"
+    io.rancher.os.after: "console"
+  volumes:
+    - /mnt:/mnt
+    - /var/lib/rancher:/var/lib/rancher
+  volumes_from:
+    - command-volumes
+    - system-volumes
+    - container-data-volumes

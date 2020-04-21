@@ -27,15 +27,14 @@ done
 log "ZFS binaries available in console container"
 system-docker exec console ls -l /sbin/zpool
 
-# for i in $(seq 1 5); do
-#     log "Waiting for ZFS stack to be initiated… ($i/5)"
-#     sleep 1
-# done
-
 log 'Checking ZFS mount sparse file…'
 if [ ! -f /mnt/virtual.zfs ]; then
-    log 'no mount file, creating…'
-    dd if=/dev/zero of=/mnt/virtual.zfs bs=1M seek=25000 count=0
+
+    pool_size=$(/dist/space.sh)
+    log "no mount file, creating sparse file…"
+    let "pool_size_blocks=$pool_size/1024"
+
+    dd if=/dev/zero of=/mnt/virtual.zfs bs=1024 seek=$pool_size_blocks count=0
     log 'ZFS mount sparse file created'
 fi
 

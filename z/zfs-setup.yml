@@ -1,5 +1,5 @@
 zfs-setup:
-  image: evaneos/rancher-os-zfs-setup:v0.1.0
+  image: evaneos/rancher-os-zfs-setup:0.1.0
   privileged: true
   labels:
     io.rancher.os.scope: "system"

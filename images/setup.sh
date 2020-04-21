@@ -78,5 +78,3 @@ log 'Cleaned up former storage data files'
 log 'Starting docker daemon…'
 system-docker start docker
 log 'Docker daemon Started'
-
-sleep infinity

@@ -1,3 +1,5 @@
+[![docker image](https://img.shields.io/badge/docker-evaneos%2Francher--os--zfs--setup-blue?style=flat-square&logo=docker)](https://hub.docker.com/repository/docker/evaneos/rancher-os-zfs-setup)
+
 # RancherOS ZFS setup
 
 This RancherOS system service bootstraps a single ZFS pool and import it on system start.

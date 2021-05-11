@@ -1,4 +1,4 @@
-# Sunset notice
+# :warning: Sunset notice
 
 This repository is archived and is not maintained anymore. Use at your own risks.
 

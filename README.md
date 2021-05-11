@@ -1,3 +1,9 @@
+# Sunset notice
+
+This repository is archived and is not maintained anymore. Use at your own risks.
+
+---
+
 [![docker image](https://img.shields.io/badge/docker-evaneos%2Francher--os--zfs--setup-blue?style=flat-square&logo=docker)](https://hub.docker.com/repository/docker/evaneos/rancher-os-zfs-setup)
 
 # RancherOS ZFS setup
